@@ -12,3 +12,7 @@ lint:
 	pylint --disable=R,C,E1120 *.py
 
 all: install lint test
+
+
+# python -m venv .venv
+# source .venv/bin/activate
