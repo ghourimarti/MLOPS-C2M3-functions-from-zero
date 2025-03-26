@@ -26,7 +26,7 @@ curl -X 'POST' \
 
 something like this
 
-`docker run -p 127.0.0.1:8080:8080 a81ce4f35866`
+`docker run -p 127.0.0.1:8080:8080 0f3b84928b65`
 
 ### Invoke POST request
 
@@ -35,4 +35,22 @@ run `invoke.sh`
 ## References
 
 * [Watch Walkthrough on YouTube](https://youtu.be/KOAdCqpQSI4)
+
+
+
+## 
+# configure
+'AWS configure'
+
+# user in IAM role and add necessary permission
+AmazonEC2ContainerRegistryFullAccess
+
+# login
+'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com'
+
+# add 
+# create repo
+aws ecr create-repository --repository-name fastapi-app
+
+
 

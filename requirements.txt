@@ -6,4 +6,4 @@ ipython
 fire
 fastapi
 pydantic
-uvicorn
+uvicorn[standard]
